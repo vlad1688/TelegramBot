@@ -20,7 +20,7 @@ def weather(message):
         temp = weatherCity["main"]["temp"]
         feels_like_temp = weatherCity["main"]["feels_like"]
         wind = weatherCity["wind"]["speed"]
-        bot.reply_to(message, f'Сейчас погода: {temp}\nЧуствуеться как: {feels_like_temp}\nВетер: {wind} м/c')
+        bot.reply_to(message, f'Сейчас погода: {temp}\nЧувствуеться как: {feels_like_temp}\nВетер: {wind} м/c')
 
         image = "sunny.png" if temp > 15.0 else 'cloudy.png'
         file = open('./' + image, 'rb')
